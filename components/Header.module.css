@@ -1,0 +1,138 @@
+/* Header.module.css */
+
+.header {
+    width: 100%;
+    background-color: #282c34; /* Dark background for a sleek look */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: fixed; /* Fix header at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header is on top of other content */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Maximum width of the header */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 10px; /* Ensure padding within container */
+    box-sizing: border-box; /* Include padding in container's total width */
+  }
+  
+  .logo {
+    font-size: 1.8rem; /* Larger font size for logo */
+    font-weight: 600; /* Semi-bold font weight */
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+  }
+  
+  .logo a {
+    color: #ffffff; /* White text color for the logo link */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .logo a:hover {
+    color: #61dafb; /* Light blue color on hover */
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between navigation items */
+  }
+  
+  .nav a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Font size for links */
+    font-weight: 400; /* Normal font weight */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+  }
+  
+  .nav a:hover {
+    color: #61dafb; /* Light blue color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .uploadIcon {
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+    gap: 8px; /* Space between icon and text */
+    font-size: 1rem; /* Font size for the upload link */
+  }
+  
+  .uploadIcon:hover {
+    color: #61dafb; /* Light blue color on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 20px; /* Adjust padding for medium screens */
+    }
+  
+    .nav {
+      gap: 15px; /* Adjust space between navigation items */
+    }
+  
+    .logo {
+      font-size: 1.6rem; /* Adjust font size for medium screens */
+    }
+  
+    .nav a {
+      font-size: 0.9rem; /* Adjust font size for navigation links */
+    }
+  
+    .uploadIcon {
+      font-size: 0.9rem; /* Adjust font size for icons */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .nav {
+      gap: 10px; /* Adjust space between navigation items */
+    }
+  
+    .logo {
+      font-size: 1.4rem; /* Adjust font size for smaller screens */
+    }
+  
+    .nav a {
+      font-size: 0.8rem; /* Adjust font size for navigation links */
+    }
+  
+    .uploadIcon {
+      font-size: 0.8rem; /* Adjust font size for icons */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 10px; /* Adjust padding for very small screens */
+    }
+  
+    .logo {
+      font-size: 1.2rem; /* Further decrease font size on very small screens */
+    }
+  
+    .nav {
+      gap: 20px; /* Adjust space between navigation items */
+    }
+  
+    .nav a {
+      font-size: 0.9rem; /* Further decrease font size for very small screens */
+    }
+  
+    .uploadIcon {
+      font-size: 0.7rem; /* Further decrease font size for icons */
+    }
+  }
+  
